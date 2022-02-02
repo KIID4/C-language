@@ -1,0 +1,46 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	int i,j;
+
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 3 - i - 1; j > 0; j--)
+		{
+			printf(" ");
+		}
+		for (j = 0; j < i + 1; j++)
+		{
+			printf("O");
+		}
+		for (j = 0; j < i; j++)
+		{
+			printf("O");
+		}
+		printf("\n");
+	}
+
+	for (i = 0; i < 2; i++)
+	{
+		for (j = 0; j < i + 1; j++)
+		{
+			printf(" ");
+		}
+		for (j = 2 - i; j > 0; j--)		
+		{
+
+			printf("O");
+		}
+		for (j = 1; j > i; j--)
+		{
+			printf("O");
+		}
+		printf("\n");
+	}
+	
+
+	return 0;
+}
